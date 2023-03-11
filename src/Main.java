@@ -15,5 +15,32 @@ public class Main {
         //
 
 
+        /*
+
+
+        Miejsce na uruchomienie menu badz GUI
+
+
+         */
+
+
+        Interia interia = new Interia();
+        RobotManage rb = new RobotManage();
+
+        interia.openDefaultBrowser();
+        interia.eneterRegDetail();
+        rb.enterCharacters("Damian");
+        rb.pressTab();
+        rb.enterCharacters("Sluszniak");
+        rb.pressTab();
+        rb.enterCharacters("12");
+        rb.pressTab();
+        rb.pressTab();
+        rb.enterCharacters("1997");
+        rb.pressTab();
+        rb.pressTab();
+        rb.enterCharacters("sadasdsacsc3423");
+
+
     }
 }
