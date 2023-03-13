@@ -1,37 +1,47 @@
-public class Main {
+import java.awt.*;
 
+public class Main {
 
 
     public static void main(String[] args) {
 
 
         String urlInteriaReg = "https://konto-pocztowe.interia.pl/#/nowe-konto/darmowe";
+        int delaySpeed = 10;
+
+        Color idleButton = new Color(0, 85, 255);
+        Color highlightedButton = new Color(0, 69, 207);
 
 
-        System.out.println("Test programu w Klasie Robot");
-        System.out.println();
-        System.out.println("Bez zewnetrznych bibliotek");
-        System.out.println();
-        System.out.println("Trzeba zrobić Jara i GUI, chociaz to moze dzialac z konsoli");
-        System.out.println();
-        System.out.println("Dodanie troche znakow");
-
-
-        Interia interia = new Interia(urlInteriaReg);
         RobotManage rb = new RobotManage();
+        rb.setDelaySpeed(delaySpeed);
+        User user = new User();
+        user.printUser();
 
-        rb.eneterRegDetail();
-        rb.enterCharacters("Damian");
-        rb.pressTab();
-        rb.enterCharacters("Sluszniak");
-        rb.pressTab();
-        rb.enterCharacters("12");
-        rb.pressTab();
-        rb.pressTab();
-        rb.enterCharacters("1997");
-        rb.pressTab();
-        rb.pressTab();
-        rb.enterCharacters("sadasdsacsc3423");
+
+//        Interia interia = new Interia(urlInteriaReg);
+//        rb.eneterRegDetail();
+//        rb.enterCharacters(user.getfName());
+//        rb.pressTab();
+//        rb.enterCharacters(user.getsName());
+//        rb.pressTab();
+//        rb.enterCharacters(user.getDay());
+//        rb.pressTab();
+//        rb.enterOptionPane(user.getMonth());
+//        rb.pressTab();
+//        rb.enterCharacters(user.getYear());
+//        rb.pressTab();
+//        rb.enterOptionPane(user.getGender());
+//        rb.pressTab();
+//        rb.enterCharacters(user.getNickName());
+//        rb.pressTab(2);
+//        rb.enterCharacters(user.getPass());
+//        rb.pressTab();
+//        rb.enterCharacters(user.getPass());
+
+        rb.searchColor(idleButton);
+
+
 
 
     }
