@@ -1,5 +1,12 @@
 public class Main {
+
+
+
     public static void main(String[] args) {
+
+
+        String urlInteriaReg = "https://konto-pocztowe.interia.pl/#/nowe-konto/darmowe";
+
 
         System.out.println("Test programu w Klasie Robot");
         System.out.println();
@@ -9,26 +16,11 @@ public class Main {
         System.out.println();
         System.out.println("Dodanie troche znakow");
 
-            // Ciekawy zbior zadanek z Programowania
-        //
-        //   http://aragorn.pb.bialystok.pl/~ania/Dzienne/podst_prog/zbior_zadan_PP.pdf
-        //
 
-
-        /*
-
-
-        Miejsce na uruchomienie menu badz GUI
-
-
-         */
-
-
-        Interia interia = new Interia();
+        Interia interia = new Interia(urlInteriaReg);
         RobotManage rb = new RobotManage();
 
-        interia.openDefaultBrowser();
-        interia.eneterRegDetail();
+        rb.eneterRegDetail();
         rb.enterCharacters("Damian");
         rb.pressTab();
         rb.enterCharacters("Sluszniak");

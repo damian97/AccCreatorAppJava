@@ -14,6 +14,20 @@ public class RobotManage {
       }
    }
 
+
+   public void eneterRegDetail() {
+
+      robot.delay(3000);
+
+      for (int i = 0; i < 3; i++) {
+         robot.keyPress(KeyEvent.VK_TAB);
+         robot.keyRelease(KeyEvent.VK_TAB);
+      }
+
+
+   }
+
+
    public void enterCharacters(String string) {
       for (int i = 0; i < string.length(); i++) {
          char tmpChar = string.charAt(i);
