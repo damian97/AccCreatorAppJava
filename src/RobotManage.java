@@ -90,12 +90,18 @@ public class RobotManage {
    }
 
    public void pressEnter() {
+
       robot.keyPress(KeyEvent.VK_ENTER);
       robot.keyRelease(KeyEvent.VK_ENTER);
    }
    public void pressTab() {
       robot.keyPress(KeyEvent.VK_TAB);
       robot.keyRelease(KeyEvent.VK_TAB);
+   }
+
+   public void pressSpace() {
+      robot.keyPress(KeyEvent.VK_SPACE);
+      robot.keyRelease(KeyEvent.VK_SPACE);
    }
 
    public void pressTab(int numbersOfTab) {
@@ -107,18 +113,11 @@ public class RobotManage {
 
 
    public void cleanTextArea() {
-//      robot.keyPress(KeyEvent.VK_CONTROL);
-//      robot.delay(50);
-//      robot.keyPress(KeyEvent.VK_A);
-//      robot.delay(50);
-//      robot.keyRelease(KeyEvent.VK_CONTROL);
-//      robot.delay(50);
-//      robot.keyRelease(KeyEvent.VK_A);
-//      robot.delay(50);
-      robot.keyPress(KeyEvent.VK_BACK_SPACE);
-      robot.delay(3050);
-      robot.keyRelease(KeyEvent.VK_BACK_SPACE);
-      robot.delay(500);
+      for (int i = 0; i < 60; i++) {
+         robot.keyPress(KeyEvent.VK_BACK_SPACE);
+         robot.keyRelease(KeyEvent.VK_BACK_SPACE);
+         robot.delay(10);
+      }
    }
 
 
