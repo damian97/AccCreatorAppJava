@@ -20,7 +20,7 @@ I am creating this program for people who like play in Tibia and often have to c
 - **You need install Java on your computer.** *You can download it from here [Oracle Java](https://www.oracle.com/pl/java/technologies/downloads/)*
 * **You must have a browser installed on your computer.** *For example: Google Chrome*
 
-‼️ *Step by step instruction:*
+❓ *Step by step instruction:*
 
 ## 
 
